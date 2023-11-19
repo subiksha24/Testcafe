@@ -55,7 +55,7 @@ test("Check an element's markup", async t => {
   //  await t.expect(e.count).gt(6, 'No options found in the dropdown');
 
     // Verify the tag name of each dropdown option
-    const j=Selector('span').withText('Home');
+const j=Selector('span').withText('Home');
     await t.click(j).takeScreenshot({path:'screen3.png'});
     await t.click(e);
     const ha=Selector('span').withText('Playlists');
@@ -66,6 +66,8 @@ test("Check an element's markup", async t => {
     await t.click(e);
 
     const l=Selector('a').withText('Browse Library');
-
+    await t.click(l);
+    const m=Selector('.reset-button');
+    await t.click(m);
 });
     
