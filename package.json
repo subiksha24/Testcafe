@@ -1,0 +1,21 @@
+{
+  "name": "js-prg",
+  "version": "1.0.0",
+  "description": "testing elements in web page using testcafe",
+  "main": "addbasic.js",
+  "scripts": {
+    "test": "testcafe chrome ./testsample"
+  },
+  "keywords": [
+    "Testcafe"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.1.0"
+  },
+  "devDependencies": {
+    "testcafe": "^3.4.0",
+    "xpath-to-css": "^1.1.0"
+  }
+}
